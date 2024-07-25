@@ -4,6 +4,7 @@ const AddCategory = ({ onNewCategorie }) => {
   const [inputValue, setinputValue] = useState("");
 
   const onInputChange = ({ target }) => {
+    console.log(target.value);
     setinputValue(target.value);
   };
 
@@ -21,7 +22,7 @@ const AddCategory = ({ onNewCategorie }) => {
       <input
         type="text"
         placeholder="Buscar gifs"
-        value={inputValue}
+        //value={inputValue}
         onChange={onInputChange}
       />
     </form>
